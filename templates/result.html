@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+<div>
+    <center>
+        <p style="color:blue;font-size:20;text-align:center;"><b>Result for comment</b></p>
+        {% if prediction == 1%}
+        <h2 style="color:blue;">The review is Positive</h2>
+        {% elif prediction == 0%}
+        <h2 style="color:red;">The review is Negative</h2>
+        {% endif %}
+    </center>
+</div>
+
+</body>
+</html>

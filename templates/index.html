@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food review analysis</title>
+</head>
+<body>
+<div>
+    <center>
+        <h1><u>Please review about the food product</u></h1>
+        <form action="{{ url_for('predict')}}" method="POST">
+            <input type="text"  size=60 name="Text" placeholder="Review about food product" required="required" /><br>
+            <button type="submit">Predict</button>
+        </form>
+    </center>
+</div>
+</body>
+</html>
