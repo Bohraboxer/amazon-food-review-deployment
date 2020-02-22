@@ -19,7 +19,7 @@ class train_test():
 		self.test_data=test_data
 		# pickle_in=open("review.pickle",'rb')
 		# self.data=pickle.load(pickle_in)
-		#
+
 		# self.tokenizer=Tokenizer()
 		# self.tokenizer.fit_on_texts(self.data['Text'].values)
 		# tokenizer_pickle = open("tokenizer.pickle", "wb")
