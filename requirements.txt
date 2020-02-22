@@ -7,3 +7,4 @@ Tensorflow==1.14.0
 keras==2.2.5
 gunicorn==20.0.4
 Flask==1.1.1
+setuptools>=41.0.0
