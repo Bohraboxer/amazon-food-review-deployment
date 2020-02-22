@@ -25,12 +25,3 @@ def df(data):
 	p.pickle.dump(data[['Text','Sentiment']], review_pickle)
 	review_pickle.close()
 	print("Pickled")
-
-
-	
-
-
-
-
-
-

@@ -17,9 +17,9 @@ from sklearn.utils import class_weight
 class train_test():
 	def __init__(self,test_data):
 		self.test_data=test_data
-		pickle_in=open("review.pickle",'rb')
-		self.data=pickle.load(pickle_in)
-
+		# pickle_in=open("review.pickle",'rb')
+		# self.data=pickle.load(pickle_in)
+		#
 		# self.tokenizer=Tokenizer()
 		# self.tokenizer.fit_on_texts(self.data['Text'].values)
 		# tokenizer_pickle = open("tokenizer.pickle", "wb")
@@ -83,4 +83,3 @@ class train_test():
 		predicted=model.predict(post_seq_padded_test)
 		return predicted
 
- 

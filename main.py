@@ -6,15 +6,15 @@ from training import *
 import time
 
 start = time.time()
-# data=p.pd.read_csv("Reviews.csv")
-# data=data.sample(frac=0.6,random_state=23)
+data=p.pd.read_csv("Reviews.csv")
+
 
 #understanding_data(data)
-# cleaning_and_preparing_train_data.df(data)
+cleaning_and_preparing_train_data.df(data)
 text_query=input("Enter the review : ")
 test_data = p.pd.DataFrame(p.np.column_stack([text_query]),columns=['Text'])
 tt=train_test(test_data)
-# tt.train()
+tt.train()
 
 tt.testing()
 predicted=tt.testing()
