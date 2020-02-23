@@ -9,11 +9,10 @@
     <center>
         <h1><u>Please review about the food product</u></h1>
         <h3><b>Note:</b></h3>
-        <ul style="list-style-type:circle;">
+        <ul style="list-style-type:none;">
             <li>To test the model, enter a review about a food product</li>
             <li>Maximum review length is 150 words</li>
             <li>The model may take some time for the prediction process.</li>
-            <li>Milk</li>
         </ul>
         <form action="{{ url_for('predict')}}" method="POST">
             <input type="text"  size=60 name="Text" placeholder="Review about food product" required="required" /><br>
